@@ -10,7 +10,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.ToString;
 
 @Document(collection = "usuario")
 @Getter
@@ -33,6 +32,8 @@ public class Usuario {
 	@NotBlank(message = "A senha é obrigatória")
 	@Size(min = 6, message = "A senha deve ter no mínimo 6 caracteres")
 	private String senha;
+
+	private int idImage;
 	
 	@Override
     public String toString() {
@@ -40,6 +41,7 @@ public class Usuario {
                 "id='" + id + '\'' +
                 ", nome='" + nome + '\'' +
                 ", email='" + email + '\'' +
+                ", image='" + idImage + '\'' +
                 " }";
     }
 	

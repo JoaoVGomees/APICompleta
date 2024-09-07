@@ -6,7 +6,7 @@ public class ToDTO {
 
 	public class UsuarioConverter {
 		public static UsuarioDTO toDTO(Usuario usuario) {
-			return new UsuarioDTO(usuario.getId(), usuario.getNome(), usuario.getEmail());
+			return new UsuarioDTO(usuario.getId(), usuario.getNome(), usuario.getEmail(), usuario.getIdImage());
 		}
 	}
 	

@@ -77,6 +77,7 @@ public class UsuarioController {
 		usuarioAtualizado.setNome(usuario.getNome());
 		usuarioAtualizado.setEmail(usuario.getEmail());
 		usuarioAtualizado.setSenha(usuario.getSenha());
+		usuarioAtualizado.setIdImage(usuario.getIdImage());
 
 		try {
 			repository.save(usuarioAtualizado);

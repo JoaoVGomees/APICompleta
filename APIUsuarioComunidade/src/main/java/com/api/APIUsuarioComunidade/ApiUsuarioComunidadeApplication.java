@@ -10,4 +10,5 @@ public class ApiUsuarioComunidadeApplication {
 		SpringApplication.run(ApiUsuarioComunidadeApplication.class, args);
 	}
 
+
 }
